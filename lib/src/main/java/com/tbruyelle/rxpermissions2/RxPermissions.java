@@ -21,8 +21,8 @@ import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
-import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 
 import java.util.ArrayList;
@@ -57,7 +57,7 @@ public class RxPermissions {
             private RxPermissionsFragment rxPermissionsFragment;
 
             @Override
-            public synchronized RxPermissionsFragment get() {
+            public RxPermissionsFragment get() {
                 if (rxPermissionsFragment == null) {
                     rxPermissionsFragment = getRxPermissionsFragment(fragmentManager);
                 }
@@ -67,7 +67,7 @@ public class RxPermissions {
         };
     }
 
-    private RxPermissionsFragment getRxPermissionsFragment(@NonNull final FragmentManager fragmentManager) {
+    private synchronized RxPermissionsFragment getRxPermissionsFragment(@NonNull final FragmentManager fragmentManager) {
         RxPermissionsFragment rxPermissionsFragment = findRxPermissionsFragment(fragmentManager);
         boolean isNewInstance = rxPermissionsFragment == null;
         if (isNewInstance) {
