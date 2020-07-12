@@ -1,6 +1,6 @@
 # RxPermissions
 
-[![](https://jitpack.io/v/tbruyelle/RxPermissions.svg)](https://jitpack.io/#tbruyelle/RxPermissions) [![BuildVersion](https://buildstats.info/nuget/RxPermissions)](https://www.nuget.org/packages/RxPermissions/) [![Build Status](https://api.travis-ci.org/tbruyelle/RxPermissions.svg?branch=master)](https://travis-ci.org/tbruyelle/RxPermissions)
+[![](https://jitpack.io/v/sontrantech/RxPermissions.svg)](https://jitpack.io/#sontrantech/RxPermissions) [![BuildVersion](https://buildstats.info/nuget/RxPermissions)](https://www.nuget.org/packages/RxPermissions/) [![Build Status](https://api.travis-ci.org/sontrantech/RxPermissions.svg?branch=master)](https://travis-ci.org/sontrantech/RxPermissions)
 
 This library allows the usage of RxJava with the new Android M permission model.
 
@@ -17,7 +17,7 @@ allprojects {
 }
 
 dependencies {
-    implementation 'com.github.tbruyelle:rxpermissions:0.11'
+    implementation 'com.github.sontrantech:rxpermissions:0.11'
 }
 ```
 
@@ -125,7 +125,7 @@ must be done during an initialization phase**. This may be `Activity.onCreate`, 
 If not, and if your app is restarted during the permission request (because of a configuration
 change for instance), the user's answer will never be emitted to the subscriber.
 
-You can find more details about that [here](https://github.com/tbruyelle/RxPermissions/issues/69).
+You can find more details about that [here](https://github.com/sontrantech/RxPermissions/issues/69).
 
 ## Status
 
@@ -146,7 +146,7 @@ in `Activity.onRequestPermissionsResult()`.
 # License
 
 ```
-Copyright (C) 2015 Thomas Bruyelle
+Copyright (C) 2015 Son Tran
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

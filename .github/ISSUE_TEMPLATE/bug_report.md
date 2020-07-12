@@ -10,8 +10,8 @@ assignees: ''
 ### Prerequisites
 
 * [] Put an X between the brackets on this line if you have done all of the following:
-    * Read carefully README: https://github.com/tbruyelle/RxPermissions#rxpermissions
-    * Checked that your issue isn't already filed: https://github.com/tbruyelle/RxPermissions/issues
+    * Read carefully README: https://github.com/sontrantech/RxPermissions#rxpermissions
+    * Checked that your issue isn't already filed: https://github.com/sontrantech/RxPermissions/issues
 
 ### Issue description
 [A clear and concise description of what the bug is.]
